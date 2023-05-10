@@ -1,0 +1,17 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "outDir": "./dist",
+
+        "declaration": true,
+        "declarationMap": true,
+        "declarationDir": "./dist/types",
+        "emitDeclarationOnly": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
